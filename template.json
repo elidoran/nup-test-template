@@ -1,4 +1,13 @@
 {
+  "keys": [
+    "project-name",
+    "project-description",
+    "project-author-name"
+    "project-author-email"
+    "github-username",
+    "github-name"
+  ],
+
   "needs": [
     "github:elidoran/nup-test-template2",
     "github:elidoran/nup-test-template3"
