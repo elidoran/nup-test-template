@@ -2,8 +2,8 @@
   "keys": [
     "project-name",
     "project-description",
-    "project-author-name"
-    "project-author-email"
+    "project-author-name",
+    "project-author-email",
     "github-username",
     "github-name"
   ],
