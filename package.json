@@ -1,0 +1,30 @@
+{
+  "name": "{{project-name}}",
+  "version": "0.0.0",
+  "description": "{{project-description}}",
+  "main": "lib/index.js",
+  "author": "{{project-author-name}} <{{project-author-email}}>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -R spec --bail --check-leaks test/lib",
+    "test4": "nave use 4.8 npm test",
+    "test6": "nave use 6.10 npm test",
+    "test7": "nave use 7.10 npm test",
+    "test-all": "npm run test4 && npm run test6 && npm run test7",
+    "coverage": "istanbul cover _mocha -- -R spec test/lib",
+    "coverage-lcov": "istanbul cover _mocha -R lcovonly -- -R spec test/lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/{{github-username}}/{{project-name}}.git"
+  },
+  "bugs": "http://github.com/{{github-username}}/{{project-name}}/issues",
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nave": "^2.2.3"
+  },
+  "dependencies": {}
+}
